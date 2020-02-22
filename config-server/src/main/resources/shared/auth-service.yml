@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    generate-ddl: true
+    ddl-auto: none
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    database: POSTGRESQL
+    properties:
+      hibernate.default_schema: microservices
+  datasource:
+    url: jdbc:postgresql://localhost:5967/dongthanh
+    username: postgres
+    password: Dongthanh5967
+server:
+  servlet:
+    context-path: /uaa
+  port: 8081
