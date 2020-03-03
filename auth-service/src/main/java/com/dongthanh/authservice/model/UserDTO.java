@@ -14,6 +14,13 @@ public class UserDTO {
 
     private List<RoleDTO> roles;
 
+    public UserDTO() {
+    }
+
+    public UserDTO(String userId) {
+        this.userId = userId;
+    }
+
     public String getUserId() {
         return userId;
     }

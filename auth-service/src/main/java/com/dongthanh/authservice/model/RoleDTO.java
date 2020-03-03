@@ -8,6 +8,13 @@ public class RoleDTO {
 
     private String description;
 
+    public RoleDTO() {
+    }
+
+    public RoleDTO(Long roleId) {
+        this.roleId = roleId;
+    }
+
     public Long getRoleId() {
         return roleId;
     }
